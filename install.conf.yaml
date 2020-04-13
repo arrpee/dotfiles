@@ -1,0 +1,15 @@
+- defaults:
+    link:
+      force: true
+      relink: true
+      create: true
+
+- clean: ["~"]
+
+- link:
+    ~/.config/spicetify/config.ini: spicetify/config.ini
+    ~/.config/spicetify/Themes/arrpee: spicetify/theme
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - [spicetify update, Updating spicetify]
