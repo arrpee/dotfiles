@@ -7,10 +7,14 @@
 - clean: ["~"]
 
 - link:
+    ~/.config/awesome: awesome
+
     ~/.config/Code/User/settings.json: code/settings.json
 
     ~/.config/spicetify/config.ini: spicetify/config.ini
     ~/.config/spicetify/Themes/arrpee: spicetify/theme
+
+    ~/.config/picom/picom.conf: picom/picom.conf
 
     ~/.zshrc: zsh/.zshrc
 
