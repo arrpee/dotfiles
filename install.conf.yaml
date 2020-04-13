@@ -12,6 +12,8 @@
     ~/.config/spicetify/config.ini: spicetify/config.ini
     ~/.config/spicetify/Themes/arrpee: spicetify/theme
 
+    ~/.zshrc: zsh/.zshrc
+
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [spicetify update, Updating spicetify]
