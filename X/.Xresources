@@ -1,0 +1,7 @@
+*.foreground:   #ebebeb
+*.foreground2:  #c9c9b9
+
+*.background:   #111317
+*.background2:  #303642
+
+*.accent:       #E7125A
