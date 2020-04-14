@@ -40,4 +40,5 @@ URxvt.cursorUnderline: false
 URxvt.saveline: 2048
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
+urxvt.underlineURLs: true
 URxvt.urgentOnBell: true
