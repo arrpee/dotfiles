@@ -25,3 +25,19 @@
 ! white
 *color7  			: #EBEBEB
 *color15 			: #F8F8F8
+
+*.font:     xft:FiraCode Nerd Font:size=10:antialias=true
+*.boldFont: xft:FiraCode Nerd Font:style=Bold:size=10:antialias=true
+*.italicFont: xft:FiraCode Nerd Font:style=Italic:size=10:antialias=true
+*.boldItalicFont: xft:FiraCode Nerd Font:style=Bold Italic:size=10:antialias=true
+
+!! URxvt Appearance
+URxvt.internalBorder: 18
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
