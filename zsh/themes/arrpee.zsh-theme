@@ -17,4 +17,4 @@ PROMPT="%{$fg[blue]%}%m %{$reset_color%}» \
 %{$fg_bold[cyan]%}[${current_dir}]%{$reset_color%}%{$reset_color%} \
 ${git_info}%{$reset_color%}
 %{$fg[magenta]%}[%*] \
-%{$fg_bold[white]%}水%{$reset_color%} "
+%{$fg[white]%}%{$reset_color%} "
