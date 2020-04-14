@@ -15,9 +15,7 @@ local tasklist =
         spacing = 4,
         align = "left",
         shape = gears.shape.transform(gears.shape.rectangle):translate(-4, 0),
-        layout = wibox.layout.align.horizontal,
-        disable_task_name = true,
-        disable_icon = false
+        layout = wibox.layout.align.horizontal
     }
 )
 
