@@ -14,7 +14,7 @@ local tasklist =
     {
         spacing = 4,
         align = "left",
-        shape = gears.shape.transform(gears.shape.rectangle):translate(-4, 0),
+        shape = gears.shape.rectangle,
         layout = wibox.layout.align.horizontal
     }
 )
