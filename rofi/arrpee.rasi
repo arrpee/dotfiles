@@ -1,0 +1,130 @@
+configuration {
+	show-icons: true;
+}
+
+* {
+    foreground: #ebebeb;
+    foreground-alt: #1F1F1F;
+
+    backlight: #66AABB;
+    background-color: #111317;
+    highlight: underline bold;
+
+    font: "FiraCode Nerd Font 12";
+    highlight: #66AABB;
+    highlight-alt: #1f398f;
+}
+
+#window {
+    width: 800px;
+    padding: 10px;
+    border:  2px;
+    border-radius: 0;
+    border-color: #66AABB;
+    color: @foreground;
+    background-color: @background;
+    spacing: 0;
+    children:  [vertb, mainbox];
+    orientation: horizontal;
+}
+
+#mainbox {
+    spacing: 0;
+    children: [ inputbar, message, listview ];
+}
+
+#message {
+	border: none;
+    padding: 5;
+    background-color: @background;
+}
+
+#inputbar {
+    padding: 20px 20px 0 20px;
+    border-color: #666666;
+	color: @foreground;
+}
+
+#entry,prompt,case-indicator {
+    text-font: inherit;
+    text-color:inherit;
+}
+
+#prompt {
+enabled: false;
+}
+
+#listview {
+    padding: 20px;
+    border-color: @foreground;
+    border: none;
+    dynamic: false;
+    lines: 8;
+}
+
+#element {
+    padding: 5px;
+    vertical-align: 0.5;
+    background-color: @background;
+    color: @foreground;
+    font-size: 10px;
+}
+#element selected.normal {
+    background-color: @foreground-alt;
+    color: @backlight;
+}
+#element normal active {
+    foreground: @foreground-alt;
+	color: @highlight;
+}
+
+#element normal urgent {
+    foreground: #ff332299;
+}
+
+#element alternate active {
+    foreground: @foreground-alt;
+	color: @foreground;
+}
+#element alternate urgent {
+    foreground: #ff332299;
+}
+#element selected active {
+    background-color: @foreground-alt;
+    color: #A54242;
+    foreground: #000000;
+}
+#element selected urgent {
+    background-color: #ff332299;
+    foreground: @background;
+}
+
+#vertb {
+    expand: false;
+    children: [ dummy0, sidebar, dummy1  ];
+}
+
+#sidebar {
+    expand: false;
+    orientation: vertical;
+    spacing: 0;
+    border: 0;
+}
+
+#button {
+    font: "FiraCode Nerd Font 18";
+    padding: 6px;
+    border: 2px 0px 2px 2px;
+    border-radius: 4px 0px 0px 4px;
+    background-color: @background;
+    border-color: @foreground;
+    color: @foreground;
+    horizontal-align: 0.5;
+}
+
+#button selected normal {
+    color: @background;
+    border: 2px 0px 2px 2px;
+    background-color: @backlight;
+    border-color: @foreground;
+}

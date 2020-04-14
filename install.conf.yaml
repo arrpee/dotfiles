@@ -7,22 +7,33 @@
 - clean: ["~"]
 
 - link:
+    # AwesomeWM
     ~/.config/awesome: awesome
 
+    # VS Code
     ~/.config/Code/User/settings.json: code/settings.json
 
+    # Spicetify
     ~/.config/spicetify/config.ini: spicetify/config.ini
     ~/.config/spicetify/Themes/arrpee: spicetify/theme
 
+    # Rofi
+    ~/.config/rofi: rofi
+
+    # Picom
     ~/.config/picom/picom.conf: picom/picom.conf
 
+    # ZSH
     ~/.zshrc: zsh/.zshrc
 
+    # Tmux
     ~/.tmux.conf: tmux/tmux.conf
 
+    # Xresources
     ~/.Xresources: X/.Xresources
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [xrdb ~/.Xresources, sourcing xresources]
+    - [xrdb ~/.Xresources, Sourcing xresources]
+    - [./venv/bin/python rofi/generate_theme.py, Generating rofi theme]
     - [spicetify update, Updating spicetify]
