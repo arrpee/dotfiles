@@ -153,7 +153,7 @@ keys.globalkeys =
         {},
         "XF86AudioRaiseVolume",
         function()
-            awful.spawn("amixer -D pulse sset Master 5%+")
+            awful.spawn("amixer -D pulse sset Master 5%+ unmute")
             if toggleVolOSD ~= nil then
                 toggleVolOSD(true)
             end
@@ -167,7 +167,7 @@ keys.globalkeys =
         {},
         "XF86AudioLowerVolume",
         function()
-            awful.spawn("amixer -D pulse sset Master 5%-")
+            awful.spawn("amixer -D pulse sset Master 5%- unmute")
             if toggleVolOSD ~= nil then
                 toggleVolOSD(true)
             end
