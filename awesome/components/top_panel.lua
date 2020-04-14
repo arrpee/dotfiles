@@ -7,6 +7,7 @@ local dpi = require("beautiful").xresources.apply_dpi
 -- Use widgets
 local taglist = require("widgets.taglist")
 local tasklist = require("widgets.tasklist")
+local time = require("widgets.time")
 local volume = require("widgets.volume")
 local systray = require("widgets.systray")
 
@@ -47,6 +48,8 @@ local TopPanel = function(s)
         {
             layout = wibox.layout.fixed.horizontal,
             volume,
+            sep,
+            time,
             sep,
             systray
         }
