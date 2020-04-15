@@ -42,7 +42,7 @@
 		"terminal.ansiMagenta": "#ff2f90",
 		"terminal.ansiRed": "#E95678",
 		"terminal.ansiWhite": "#DDEEDD",
-		"terminal.ansiYellow": "#FEA63C",
+		"terminal.ansiYellow": "#FAB795",
 		"terminal.background": "#111317",
 		"terminal.foreground": "#ebebeb",
 		"titleBar.activeBackground": "#111317",
@@ -77,7 +77,7 @@
 			"name": "Escape characters",
 			"scope": "constant.character.escape",
 			"settings": {
-				"foreground": "#25B0BCE6"
+				"foreground": "#66AABBE6"
 			}
 		},
 		{
@@ -91,7 +91,7 @@
 			"name": "Function names",
 			"scope": "entity.name.function",
 			"settings": {
-				"foreground": "#25B0BCE6"
+				"foreground": "#66AABBE6"
 			}
 		},
 		{
@@ -131,7 +131,7 @@
 			"name": "CSS ID selectors",
 			"scope": "entity.other.attribute-name.id",
 			"settings": {
-				"foreground": "#25B0BCE6"
+				"foreground": "#66AABBE6"
 			}
 		},
 		{
@@ -217,7 +217,7 @@
 			"name": "Markup italics",
 			"scope": "markup.italic",
 			"settings": {
-				"foreground": "#25B0BCE6",
+				"foreground": "#66AABBE6",
 				"fontStyle": "italic"
 			}
 		},
@@ -281,7 +281,7 @@
 			"name": "Provided functions",
 			"scope": "support.function",
 			"settings": {
-				"foreground": "#25B0BCE6"
+				"foreground": "#66AABBE6"
 			}
 		},
 		{
