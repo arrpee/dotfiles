@@ -23,8 +23,8 @@ if __name__ == "__main__":
     with open(os.path.join(sys.path[0], "arrpee.rasi.template")) as f:
         templated_theme = f.read()
 
-    for k, v in mappings.items():
-        templated_theme = templated_theme.replace(k, v)
+    for k in reversed(sorted(mappings.keys())):
+        templated_theme = templated_theme.replace(k, mappings[k])
 
     with open(os.path.join(sys.path[0], "arrpee.rasi"), "w") as f:
         f.write(templated_theme)
