@@ -50,6 +50,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 ZSH_CUSTOM=~/.dotfiles/zsh
 
 plugins=(
+    fzf
     sudo
     colored-man-pages
     wd
