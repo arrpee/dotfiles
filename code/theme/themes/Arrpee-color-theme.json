@@ -46,6 +46,15 @@
 		"terminal.background": "#111317",
 		"terminal.foreground": "#ebebeb",
 		"titleBar.activeBackground": "#111317",
+		"editor.foldBackground": "#111317",
+		"list.hoverBackground" : "#1F1F1F",
+		"list.focusBackground" : "#1F1F1F",
+		"list.focusForeground" : "#66AABB",
+		"list.activeSelectionBackground" : "#1F1F1F",
+		"list.activeSelectionForeground" : "#66AABB",
+		"list.inactiveSelectionBackground" : "#1F1F1F",
+		"list.inactiveSelectionForeground" : "#66AABB",
+		"focusBorder" : "#66AABB",
 		"titleBar.activeForeground": "#ebebeb"
 	},
 	"tokenColors": [
