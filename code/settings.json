@@ -54,5 +54,6 @@
   "window.menuBarVisibility": "visible",
   "window.titleBarStyle": "custom",
   "vim.startInInsertMode": true,
-  "vim.useSystemClipboard": true
+  "vim.useSystemClipboard": true,
+  "terminal.integrated.cursorBlinking": true
 }
