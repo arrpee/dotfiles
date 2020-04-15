@@ -29,6 +29,8 @@ theme.taglist_shape_border_color = theme.bg_normal
 theme.tasklist_shape_border_color = theme.bg_normal
 theme.notification_bg = theme.bg_normal
 
+theme.taglist_bg_urgent = xrdb.color1
+
 theme.tasklist_disable_icon = true
 theme.useless_gap = dpi(8)
 theme.border_width = dpi(1)
