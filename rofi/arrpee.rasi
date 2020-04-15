@@ -75,28 +75,9 @@ configuration {
     color: @foreground;
 }
 
-#element selected.normal {
+#element selected  {
     background-color: @background-alt;
     color: @foreground-alt;
-}
-
-#element normal active {
-    foreground: @foreground-alt;
-	color: @highlight;
-}
-
-#element normal urgent {
-	color: @highlight;
-}
-
-#element selected active {
-    background-color: @background-alt;
-	color: @highlight;
-}
-
-#element selected urgent {
-    background-color: @highlight;
-    foreground: @background;
 }
 
 #vertb {
