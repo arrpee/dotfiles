@@ -13,6 +13,9 @@
     # VS Code
     ~/.config/Code/User/settings.json: code/settings.json
 
+    # VS Code theme
+    ~/.vscode/extensions/arrpee-1.0.0: code/theme
+
     # Spicetify
     ~/.config/spicetify/config.ini: spicetify/config.ini
     ~/.config/spicetify/Themes/arrpee: spicetify/theme
@@ -35,5 +38,6 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [xrdb ~/.Xresources, Sourcing xresources]
+    - [./venv/bin/python code/generate_theme.py, Generating vscode theme]
     - [./venv/bin/python rofi/generate_theme.py, Generating rofi theme]
     - [spicetify update, Updating spicetify]
