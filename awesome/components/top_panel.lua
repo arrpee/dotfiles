@@ -43,9 +43,9 @@ local TopPanel = function(s)
         layout = wibox.layout.align.horizontal,
         {
             layout = wibox.layout.fixed.horizontal,
-            tasklist
+            tasklist(s)
         },
-        taglist,
+        taglist(s),
         {
             layout = wibox.layout.fixed.horizontal,
             volume,
