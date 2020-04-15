@@ -40,7 +40,7 @@
 		"terminal.ansiCyan": "#59E1E3",
 		"terminal.ansiGreen": "#B7CE42",
 		"terminal.ansiMagenta": "#ff2f90",
-		"terminal.ansiRed": "#A54242",
+		"terminal.ansiRed": "#E95678",
 		"terminal.ansiWhite": "#DDEEDD",
 		"terminal.ansiYellow": "#FEA63C",
 		"terminal.background": "#111317",
@@ -158,8 +158,7 @@
 			"name": "Keywords",
 			"scope": "keyword",
 			"settings": {
-				"foreground": "#B877DBE6",
-				"fontStyle": "bold"
+				"foreground": "#ff2f90E6",
 			}
 		},
 		{
@@ -178,7 +177,7 @@
 				"keyword.operator.delete"
 			],
 			"settings": {
-				"foreground": "#B877DBE6"
+				"foreground": "#ff2f90E6"
 			}
 		},
 		{
@@ -210,7 +209,7 @@
 			"name": "Markup bold",
 			"scope": "markup.bold",
 			"settings": {
-				"foreground": "#B877DBE6",
+				"foreground": "#ff2f90E6",
 				"fontStyle": "bold"
 			}
 		},
@@ -243,7 +242,7 @@
 			"name": "Storage keywords",
 			"scope": "storage",
 			"settings": {
-				"foreground": "#B877DBE6",
+				"foreground": "#ff2f90E6",
 				"fontStyle": "bold"
 			}
 		},
@@ -352,14 +351,14 @@
 			"name": "Template expressions",
 			"scope": "punctuation.definition.template-expression",
 			"settings": {
-				"foreground": "#B877DBE6"
+				"foreground": "#ff2f90E6"
 			}
 		},
 		{
 			"name": "Embedded section punctuation",
 			"scope": "punctuation.section.embedded",
 			"settings": {
-				"foreground": "#B877DBE6"
+				"foreground": "#ff2f90E6"
 			}
 		},
 		{

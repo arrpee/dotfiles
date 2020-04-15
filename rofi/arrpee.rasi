@@ -12,7 +12,7 @@ configuration {
     /* Some blocks were not picking up the background properly */
     background-color: #111317;
 
-    highlight: #A54242;
+    highlight: #E95678;
 
     border-color: #66AABB;
 
