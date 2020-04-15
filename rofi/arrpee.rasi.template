@@ -4,15 +4,19 @@ configuration {
 
 * {
     foreground: xr_foreground;
-    foreground-alt: xr_color0;
+    foreground-alt: xr_color4;
 
-    backlight: xr_color4;
+    background: xr_background;
+    background-alt: xr_color0;
+
+    /* Some blocks were not picking up the background properly */
     background-color: xr_background;
-    highlight: underline bold;
+
+    highlight: xr_color1;
+
+    border-color: xr_color4;
 
     font: "FiraCode Nerd Font 12";
-    highlight: xr_color4;
-    highlight-alt: #1f398f;
 }
 
 #window {
@@ -20,9 +24,9 @@ configuration {
     padding: 10px;
     border:  2px;
     border-radius: 0;
-    border-color: xr_color4;
     color: @foreground;
     background-color: @background;
+    border-color: @border-color;
     spacing: 0;
     children:  [vertb, mainbox];
     orientation: horizontal;
@@ -41,8 +45,10 @@ configuration {
 
 #inputbar {
     padding: 20px 20px 0 20px;
-    border-color: #666666;
-	color: @foreground;
+    border-color: @background-alt;
+	color: @foreground-alt;
+    foreground: @background;
+    background-color: @background;
 }
 
 #entry,prompt,case-indicator {
@@ -51,15 +57,15 @@ configuration {
 }
 
 #prompt {
-enabled: false;
+    enabled: false;
 }
 
 #listview {
     padding: 20px;
-    border-color: @foreground;
     border: none;
     dynamic: false;
     lines: 8;
+    background-color: @background;
 }
 
 #element {
@@ -67,35 +73,29 @@ enabled: false;
     vertical-align: 0.5;
     background-color: @background;
     color: @foreground;
-    font-size: 10px;
 }
+
 #element selected.normal {
-    background-color: @foreground-alt;
-    color: @backlight;
+    background-color: @background-alt;
+    color: @foreground-alt;
 }
+
 #element normal active {
     foreground: @foreground-alt;
 	color: @highlight;
 }
 
 #element normal urgent {
-    foreground: #ff332299;
+	color: @highlight;
 }
 
-#element alternate active {
-    foreground: @foreground-alt;
-	color: @foreground;
-}
-#element alternate urgent {
-    foreground: #ff332299;
-}
 #element selected active {
-    background-color: @foreground-alt;
-    color: xr_color1;
-    foreground: #000000;
+    background-color: @background-alt;
+	color: @highlight;
 }
+
 #element selected urgent {
-    background-color: #ff332299;
+    background-color: @highlight;
     foreground: @background;
 }
 
@@ -106,25 +106,4 @@ enabled: false;
 
 #sidebar {
     expand: false;
-    orientation: vertical;
-    spacing: 0;
-    border: 0;
-}
-
-#button {
-    font: "FiraCode Nerd Font 18";
-    padding: 6px;
-    border: 2px 0px 2px 2px;
-    border-radius: 4px 0px 0px 4px;
-    background-color: @background;
-    border-color: @foreground;
-    color: @foreground;
-    horizontal-align: 0.5;
-}
-
-#button selected normal {
-    color: @background;
-    border: 2px 0px 2px 2px;
-    background-color: @backlight;
-    border-color: @foreground;
 }
