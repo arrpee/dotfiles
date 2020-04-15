@@ -1,6 +1,6 @@
-import subprocess
-import os
-import sys
+import subprocess, os, sys
+from jinja2 import Environment, FileSystemLoader
+
 
 if __name__ == "__main__":
     xresources = subprocess.check_output(["xrdb", "-query", "-all"]).decode("utf-8")
@@ -20,11 +20,8 @@ if __name__ == "__main__":
         {f"xr_{x}": xresources_dict[f"*{x}"] for x in [f"color{i}" for i in range(16)]}
     )
 
-    with open(os.path.join(sys.path[0], "arrpee.rasi.template")) as f:
-        templated_theme = f.read()
-
-    for k in reversed(sorted(mappings.keys())):
-        templated_theme = templated_theme.replace(k, mappings[k])
+    env = Environment(loader=FileSystemLoader(sys.path[0]))
+    template = env.get_template("arrpee.rasi.jinja")
 
     with open(os.path.join(sys.path[0], "arrpee.rasi"), "w") as f:
-        f.write(templated_theme)
+        f.write(template.render(mappings=mappings))

@@ -3,18 +3,18 @@ configuration {
 }
 
 * {
-    foreground: xr_foreground;
-    foreground-alt: xr_color4;
+    foreground: {{ mappings['xr_foreground'] }};
+    foreground-alt: {{ mappings['xr_color4'] }};
 
-    background: xr_background;
-    background-alt: xr_color0;
+    background: {{ mappings['xr_background'] }};
+    background-alt: {{ mappings['xr_color0'] }};
 
     /* Some blocks were not picking up the background properly */
-    background-color: xr_background;
+    background-color: {{ mappings['xr_background'] }};
 
-    highlight: xr_color1;
+    highlight: {{ mappings['xr_color1'] }};
 
-    border-color: xr_color4;
+    border-color: {{ mappings['xr_color4'] }};
 
     font: "FiraCode Nerd Font 12";
 }

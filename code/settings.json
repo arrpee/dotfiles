@@ -56,5 +56,6 @@
   "vim.startInInsertMode": true,
   "vim.useSystemClipboard": true,
   "terminal.integrated.cursorBlinking": true,
-  "workbench.colorTheme": "Arrpee"
+  "workbench.colorTheme": "Arrpee",
+  "python.jediEnabled": false
 }
