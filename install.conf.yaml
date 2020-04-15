@@ -23,6 +23,9 @@
     # Rofi
     ~/.config/rofi: rofi
 
+    # Ranger
+    ~/.config/ranger/rc.conf: ranger/rc.conf
+
     # Picom
     ~/.config/picom/picom.conf: picom/picom.conf
 
