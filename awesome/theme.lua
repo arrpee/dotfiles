@@ -40,6 +40,5 @@ theme.tasklist_shape_border_width = dpi(1)
 theme.notification_border_width = theme.border_width
 theme.notification_border_color = theme.fg_normal
 theme.notification_margin = theme.useless_gap
-theme.notification_border_width_critical = "#FF0000"
 
 return theme
