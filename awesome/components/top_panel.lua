@@ -23,6 +23,7 @@ local sep =
 local TopPanel = function(s)
     local panel =
         awful.wibar {
+        position = "top",
         ontop = false,
         screen = s,
         height = dpi(30),
