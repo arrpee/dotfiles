@@ -2,21 +2,32 @@
 local awful = require("awful")
 local beautiful = require("beautiful")
 local wibox = require("wibox")
+local gears = require("gears")
 local dpi = require("beautiful").xresources.apply_dpi
 
 -- Use widgets
 local taglist = require("widgets.taglist")
+local tasklist = require("widgets.tasklist")
 local tasklist = require("widgets.tasklist")
 local date = require("widgets.date")
 local time = require("widgets.time")
 local volume = require("widgets.volume")
 local systray = require("widgets.systray")
 
--- Separator Widget
+-- Separator Widgets
+local boundary_sep =
+    wibox.widget {
+    opacity = 0,
+    widget = wibox.widget.separator,
+    forced_width = dpi(15)
+}
+
 local sep =
     wibox.widget {
-    markup = "  ",
-    widget = wibox.widget.textbox
+    color = beautiful.bg_normal,
+    shape = gears.rounded_bar,
+    widget = wibox.widget.separator,
+    forced_width = dpi(20)
 }
 
 -- Bar Creation
@@ -44,16 +55,21 @@ local TopPanel = function(s)
         layout = wibox.layout.align.horizontal,
         {
             layout = wibox.layout.fixed.horizontal,
+            boundary_sep,
+            taglist(s),
+            sep,
             tasklist(s)
         },
-        taglist(s),
+        {
+            layout = wibox.layout.align.horizontal
+        },
         {
             layout = wibox.layout.fixed.horizontal,
-            volume,
+            time,
             sep,
             date,
             sep,
-            time,
+            volume,
             sep,
             systray
         }
