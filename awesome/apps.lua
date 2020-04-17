@@ -8,8 +8,8 @@ local apps = {
     browser = "google-chrome-stable",
     editor = "code",
     music_player = "spotify",
-    launcher = "rofi -theme arrpee -modi drun,run -show drun",
-    switcher = "rofi -theme arrpee -modi window -show window",
+    launcher = "rofi -theme arrpee -show-icons -modi drun,run -show drun",
+    switcher = "rofi -theme arrpee -show-icons -modi window -show window",
     screenshot = "flameshot gui",
     change_wallpaper = "feh --randomize --bg-scale ~/Pictures/Wallpapers"
 }
