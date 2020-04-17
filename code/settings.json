@@ -57,5 +57,6 @@
   "vim.useSystemClipboard": true,
   "terminal.integrated.cursorBlinking": true,
   "workbench.colorTheme": "Arrpee",
-  "python.jediEnabled": false
+  "python.jediEnabled": false,
+  "workbench.startupEditor": "newUntitledFile"
 }
