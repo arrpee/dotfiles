@@ -8,6 +8,7 @@ local apps = {
     browser = "google-chrome-stable",
     editor = "code",
     music_player = "spotify",
+    lock = "sh -c ~/.dotfiles/scripts/lock.sh",
     power = "sh -c ~/.dotfiles/scripts/powermenu.sh",
     launcher = "rofi -theme arrpee -show-icons -modi drun,run -show drun",
     switcher = "rofi -theme arrpee -show-icons -modi window -show window",

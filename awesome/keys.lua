@@ -286,7 +286,7 @@ keys.globalkeys =
         {modkey2},
         "l",
         function()
-            awful.spawn(apps.lockscreen)
+            awful.spawn(apps.lock)
         end,
         {description = "toggle exit screen", group = "hotkeys"}
     ),
