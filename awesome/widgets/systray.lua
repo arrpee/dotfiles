@@ -4,7 +4,7 @@ local toggle_widget = require("utils.toggle_widget")
 
 -- Systray Widget
 local systray = wibox.widget.systray(true)
-systray.visible = false
+systray.visible = true
 systray.set_base_size(28)
 systray.set_horizontal(true)
 local systray_widget =
@@ -21,8 +21,4 @@ local systray_widget =
     wibox.widget.textbox
 )
 
-return {
-    systray,
-    systray_widget,
-    layout = wibox.layout.align.horizontal
-}
+return systray

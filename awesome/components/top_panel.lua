@@ -71,7 +71,8 @@ local TopPanel = function(s)
             sep,
             volume,
             sep,
-            systray
+            systray,
+            boundary_sep
         }
     }
 
