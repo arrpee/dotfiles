@@ -9,9 +9,11 @@ local dpi = require("beautiful").xresources.apply_dpi
 local taglist = require("widgets.taglist")
 local tasklist = require("widgets.tasklist")
 local tasklist = require("widgets.tasklist")
-local date = require("widgets.date")
-local time = require("widgets.time")
+local cpu = require("widgets.cpu")
+local ram = require("widgets.ram")
 local volume = require("widgets.volume")
+local time = require("widgets.time")
+local date = require("widgets.date")
 local systray = require("widgets.systray")
 
 -- Separator Widgets
@@ -65,11 +67,15 @@ local TopPanel = function(s)
         },
         {
             layout = wibox.layout.fixed.horizontal,
-            time,
+            cpu,
+            sep,
+            ram,
+            sep,
+            volume,
             sep,
             date,
             sep,
-            volume,
+            time,
             sep,
             systray,
             boundary_sep
