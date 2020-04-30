@@ -23,6 +23,7 @@ alias ls="LC_COLLATE=C ls --group-directories-first --color=auto"
 alias tldr="tldr -t base16"
 alias tmux="tmux -u"
 alias uptime="uptime -p"
+alias dd="echo Don\'t use dd, dummy."
 
 # Stuff
 alias :q='echo You are not editing a file, dummy.'
