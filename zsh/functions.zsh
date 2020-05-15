@@ -9,7 +9,7 @@ function pyve() { python3 -m venv venv; }
 function pyva() { source ./venv/bin/activate; }
 
 # Locate file/folder and cd to it
-function cf() {
+function cdf() {
   local file
 
   file="$(locate -Ai -0 $@ | grep -z -vE '~$' | fzf --read0 -0 -1)"
@@ -20,5 +20,16 @@ function cf() {
     else
       cd -- ${file:h}
     fi
+  fi
+}
+
+# Locate file and cat it
+function catf() {
+  local file
+
+  file="$(locate -Ai -0 $@ | grep -z -vE '~$' | fzf --read0 -0 -1)"
+
+  if [[ -r $file ]]; then
+    cat $file
   fi
 }
