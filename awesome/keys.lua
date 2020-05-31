@@ -436,6 +436,16 @@ keys.clientkeys =
             c:raise()
         end,
         {description = "(un)maximize", group = "client"}
+    ),
+    -- toggle floating
+    awful.key(
+        {modkey},
+        "p",
+        function(c)
+            c.floating = not c.floating
+            c:raise()
+        end,
+        {description = "toggle float", group = "client"}
     )
 )
 
