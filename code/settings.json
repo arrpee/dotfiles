@@ -59,5 +59,7 @@
   "workbench.colorTheme": "Arrpee",
   "python.jediEnabled": false,
   "workbench.startupEditor": "newUntitledFile",
-  "vim.useCtrlKeys": false
+  "vim.useCtrlKeys": false,
+  "vim.disableExtension": true,
+  "python.formatting.provider": "black"
 }
