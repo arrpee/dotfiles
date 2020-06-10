@@ -1,6 +1,6 @@
 -- Imports
 local awful = require("awful")
-local naughty = require("naughty")
+local gears = require("gears")
 local apps = require("apps")
 
 -- Set wallpaper function
@@ -9,4 +9,9 @@ local function set_wallpaper()
 end
 
 -- Initial call
-set_wallpaper()
+gears.timer {
+    timeout = 3600,
+    call_now = true,
+    autostart = true,
+    callback = set_wallpaper
+}
