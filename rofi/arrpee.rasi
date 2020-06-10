@@ -63,7 +63,7 @@ configuration {
     padding: 20px;
     border: none;
     dynamic: false;
-    lines: 5;
+    lines: 8;
     background-color: @background;
 }
 
