@@ -437,6 +437,19 @@ keys.clientkeys =
         end,
         {description = "(un)maximize", group = "client"}
     ),
+    -- Focus on one window
+    awful.key(
+        {modkey},
+        "g",
+        function(c)
+            clients = c.screen.get_clients()
+            for _, client in pairs(clients) do
+                client.minimized = true
+            end
+            c:jump_to(false)
+        end,
+        {description = "toggle fullscreen", group = "client"}
+    ),
     -- toggle floating
     awful.key(
         {modkey},
