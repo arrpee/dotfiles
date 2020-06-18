@@ -61,5 +61,6 @@
   "workbench.startupEditor": "newUntitledFile",
   "vim.useCtrlKeys": false,
   "vim.disableExtension": true,
-  "python.formatting.provider": "black"
+  "python.formatting.provider": "black",
+  "python.languageServer": "Microsoft"
 }
