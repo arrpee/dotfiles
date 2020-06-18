@@ -3,34 +3,34 @@
 	"type": "dark",
 	"colors": {
 		"activityBar.background": "#111317",
-		"activityBar.foreground": "#ebebeb",
+		"activityBar.foreground": "#EBEBEB",
 		"activityBarBadge.background": "#66AABB",
 		"button.background": "#66AABB",
 		"button.foreground": "#DDEEDD",
 		"diffEditor.insertedTextBackground": "#BDE07733",
 		"diffEditor.removedTextBackground": "#CC666633",
 		"editor.background": "#111317",
-		"editor.foreground": "#ebebeb",
+		"editor.foreground": "#EBEBEB",
 		"editorGroup.border": "#1F1F1F",
 		"editorGroupHeader.tabsBackground": "#111317",
 		"menu.background": "#111317",
-		"menu.foreground": "#ebebeb",
+		"menu.foreground": "#EBEBEB",
 		"panel.background": "#111317",
 		"sideBar.background": "#111317",
-		"sideBar.foreground": "#ebebeb",
+		"sideBar.foreground": "#EBEBEB",
 		"sideBarSectionHeader.background": "#111317",
-		"sideBarSectionHeader.foreground": "#ebebeb",
+		"sideBarSectionHeader.foreground": "#EBEBEB",
 		"statusBar.background": "#111317",
-		"statusBar.foreground": "#ebebeb",
+		"statusBar.foreground": "#EBEBEB",
 		"tab.activeBackground": "#111317",
-		"tab.activeForeground": "#ebebeb",
+		"tab.activeForeground": "#EBEBEB",
 		"tab.border": "#111317",
 		"tab.inactiveBackground": "#111317",
-		"tab.inactiveForeground": "#ebebeb",
+		"tab.inactiveForeground": "#EBEBEB",
 		"terminal.ansiBlack": "#1F1F1F",
 		"terminal.ansiBlue": "#66AABB",
-		"terminal.ansiBrightBlack": "#4d4d4d",
-		"terminal.ansiBrightBlue": "#AACCBB",
+		"terminal.ansiBrightBlack": "#4D4D4D",
+		"terminal.ansiBrightBlue": "#6676BB",
 		"terminal.ansiBrightCyan": "#6BE4E6",
 		"terminal.ansiBrightGreen": "#BDE077",
 		"terminal.ansiBrightMagenta": "#BB4466",
@@ -39,12 +39,12 @@
 		"terminal.ansiBrightYellow": "#FFE863",
 		"terminal.ansiCyan": "#59E1E3",
 		"terminal.ansiGreen": "#B7CE42",
-		"terminal.ansiMagenta": "#ff2f90",
+		"terminal.ansiMagenta": "#FF2F90",
 		"terminal.ansiRed": "#E95678",
 		"terminal.ansiWhite": "#DDEEDD",
 		"terminal.ansiYellow": "#FAB795",
 		"terminal.background": "#111317",
-		"terminal.foreground": "#ebebeb",
+		"terminal.foreground": "#EBEBEB",
 		"titleBar.activeBackground": "#111317",
 		"editor.foldBackground": "#111317",
 		"list.hoverBackground" : "#1F1F1F",
@@ -55,7 +55,7 @@
 		"list.inactiveSelectionBackground" : "#1F1F1F",
 		"list.inactiveSelectionForeground" : "#66AABB",
 		"focusBorder" : "#66AABB",
-		"titleBar.activeForeground": "#ebebeb"
+		"titleBar.activeForeground": "#EBEBEB"
 	},
 	"tokenColors": [
 		{
@@ -158,7 +158,7 @@
 			"name": "Keywords",
 			"scope": "keyword",
 			"settings": {
-				"foreground": "#ff2f90E6",
+				"foreground": "#FF2F90E6",
 			}
 		},
 		{
@@ -177,7 +177,7 @@
 				"keyword.operator.delete"
 			],
 			"settings": {
-				"foreground": "#ff2f90E6"
+				"foreground": "#FF2F90E6"
 			}
 		},
 		{
@@ -209,7 +209,7 @@
 			"name": "Markup bold",
 			"scope": "markup.bold",
 			"settings": {
-				"foreground": "#ff2f90E6",
+				"foreground": "#FF2F90E6",
 				"fontStyle": "bold"
 			}
 		},
@@ -242,7 +242,7 @@
 			"name": "Storage keywords",
 			"scope": "storage",
 			"settings": {
-				"foreground": "#ff2f90E6",
+				"foreground": "#FF2F90E6",
 				"fontStyle": "bold"
 			}
 		},
@@ -351,14 +351,14 @@
 			"name": "Template expressions",
 			"scope": "punctuation.definition.template-expression",
 			"settings": {
-				"foreground": "#ff2f90E6"
+				"foreground": "#FF2F90E6"
 			}
 		},
 		{
 			"name": "Embedded section punctuation",
 			"scope": "punctuation.section.embedded",
 			"settings": {
-				"foreground": "#ff2f90E6"
+				"foreground": "#FF2F90E6"
 			}
 		},
 		{

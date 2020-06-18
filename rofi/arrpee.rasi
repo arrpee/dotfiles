@@ -2,7 +2,7 @@ configuration {
 }
 
 * {
-    foreground: #ebebeb;
+    foreground: #EBEBEB;
     foreground-alt: #66AABB;
 
     background: #111317;

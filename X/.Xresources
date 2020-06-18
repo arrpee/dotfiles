@@ -1,37 +1,77 @@
-*.foreground:       #ebebeb
-*.background:       #111317
+!! Colour Variables
 
-!black
-*color0:	#1F1F1F
-*color8:	#4d4d4d
-!redc
-*color1:	#E95678
-*color9:	#CC6666
-!green
-*color2:	#B7CE42
-*color10:	#BDE077
-!yellow
-*color3:	#FAB795
-*color11:	#FFE863
-!blue
-*color4:	#66AABB
-*color12:	#AACCBB
-!magenta
-*color5:	#ff2f90
-*color13:	#BB4466
-!cyan
-*color6:	#59E1E3
-*color14:	#6BE4E6
-!white
-*color7:	#DDEEDD
-*color15:	#6C887A
+#define fb #EBEBEB
+#define bg #111317
 
+!!~ Black
+#define c00 #1F1F1F
+#define c08 #4D4D4D
+
+!!~ Red
+#define c01 #E95678
+#define c09 #CC6666
+
+!!~ Green
+#define c02 #B7CE42
+#define c10 #BDE077
+
+!!~ Yellow
+#define c03 #FAB795
+#define c11 #FFE863
+
+!!~ Blue
+#define c04 #66AABB
+#define c12 #6676BB
+
+!!~ Magenta
+#define c05 #FF2F90
+#define c13 #BB4466
+
+!!~ Cyan
+#define c06 #59E1E3
+#define c14 #6BE4E6
+
+!!~ White
+#define c07 #DDEEDD
+#define c15 #6C887A
+
+
+!! Colours
+*.foreground:   fb
+*.background:   bg
+
+*color0:	c00
+*color1:	c01
+*color2:	c02
+*color3:	c03
+*color4:	c04
+*color5:	c05
+*color6:	c06
+*color7:	c07
+*color8:	c08
+*color9:	c09
+*color10:	c10
+*color11:	c11
+*color12:	c12
+*color13:	c13
+*color14:	c14
+*color15:	c15
+
+!! Fonts and Settings
 *.font:     xft:FiraCode Nerd Font:size=10:antialias=true
 *.boldFont: xft:FiraCode Nerd Font:style=Bold:size=10:antialias=true
 *.italicFont: xft:FiraCode Nerd Font:style=Italic:size=10:antialias=true
 *.boldItalicFont: xft:FiraCode Nerd Font:style=Bold Italic:size=10:antialias=true
 
-!! URxvt Appearance
+
+!! Accent Definition
+accent1: c04
+accent2: c12
+
+!! URxvt Settings and Appearance
+
+URxvt.cursorColor: c05
+
 URxvt.internalBorder: 18
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
@@ -42,3 +82,5 @@ URxvt.scrollBar: false
 URxvt.scrollBar_right: false
 urxvt.underlineURLs: true
 URxvt.urgentOnBell: true
+URxvt.iso14755: false
+URxvt.iso14755_52: false

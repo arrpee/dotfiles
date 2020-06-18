@@ -41,6 +41,5 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [xrdb ~/.Xresources, Sourcing xresources]
-    - [./venv/bin/python code/generate_theme.py, Generating vscode theme]
-    - [./venv/bin/python rofi/generate_theme.py, Generating rofi theme]
+    - [./venv/bin/python generate_themes.py, Generating themes]
     - [spicetify update, Updating spicetify]
