@@ -70,7 +70,7 @@ accent2: c12
 
 !! URxvt Settings and Appearance
 
-URxvt.cursorColor: c05
+URxvt.cursorColor: c04
 
 URxvt.internalBorder: 18
 URxvt.letterSpace: 0

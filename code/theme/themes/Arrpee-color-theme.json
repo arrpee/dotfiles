@@ -45,6 +45,7 @@
 		"terminal.ansiYellow": "#FAB795",
 		"terminal.background": "#111317",
 		"terminal.foreground": "#EBEBEB",
+		"terminalCursor.foreground": "#66AABB",
 		"titleBar.activeBackground": "#111317",
 		"editor.foldBackground": "#111317",
 		"list.hoverBackground" : "#1F1F1F",
