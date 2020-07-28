@@ -1,61 +1,30 @@
-!! Colour Variables
-
-#define fb #EBEBEB
-#define bg #111317
-
-!!~ Black
-#define c00 #1F1F1F
-#define c08 #4D4D4D
-
-!!~ Red
-#define c01 #E95678
-#define c09 #CC6666
-
-!!~ Green
-#define c02 #B7CE42
-#define c10 #BDE077
-
-!!~ Yellow
-#define c03 #FAB795
-#define c11 #FFE863
-
-!!~ Blue
-#define c04 #66AABB
-#define c12 #6676BB
-
-!!~ Magenta
-#define c05 #FF2F90
-#define c13 #BB4466
-
-!!~ Cyan
-#define c06 #59E1E3
-#define c14 #6BE4E6
-
-!!~ White
-#define c07 #DDEEDD
-#define c15 #6C887A
-
-
 !! Colours
-*.foreground:   fb
-*.background:   bg
+*.foreground:   #EBEBEB
+*.background:   #111317
 
-*color0:	c00
-*color1:	c01
-*color2:	c02
-*color3:	c03
-*color4:	c04
-*color5:	c05
-*color6:	c06
-*color7:	c07
-*color8:	c08
-*color9:	c09
-*color10:	c10
-*color11:	c11
-*color12:	c12
-*color13:	c13
-*color14:	c14
-*color15:	c15
+*color0:	#1F1F1F
+*color8:	#4D4D4D
+
+*color1:	#E95678
+*color9:	#CC6666
+
+*color2:	#B7CE42
+*color10:	#BDE077
+
+*color3:	#FAB795
+*color11:	#FFE863
+
+*color4:	#66AABB
+*color12:	#6676BB
+
+*color5:	#FF2F90
+*color13:	#BB4466
+
+*color6:	#59E1E3
+*color14:	#6BE4E6
+
+*color7:	#DDEEDD
+*color15:	#6C887A
 
 !! Fonts and Settings
 *.font:     xft:FiraCode Nerd Font:size=10:antialias=true
@@ -65,12 +34,12 @@
 
 
 !! Accent Definition
-accent1: c04
-accent2: c12
+accent1: #66AABB
+accent2: #6676BB
 
 !! URxvt Settings and Appearance
 
-URxvt.cursorColor: c04
+URxvt.cursorColor: #66AABB
 
 URxvt.internalBorder: 18
 URxvt.letterSpace: 0
