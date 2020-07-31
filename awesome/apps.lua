@@ -12,8 +12,7 @@ local apps = {
     power = "sh -c ~/.dotfiles/scripts/,powermenu",
     launcher = "rofi -theme arrpee -show-icons -modi drun,run -show drun",
     switcher = "rofi -theme arrpee -show-icons -modi window -show window",
-    screenshot = "flameshot gui",
-    change_wallpaper = "feh --randomize --bg-scale ~/Pictures/Wallpapers"
+    screenshot = "flameshot gui"
 }
 
 -- List of apps to start once on start-up
