@@ -56,21 +56,6 @@ client.connect_signal(
     end
 )
 
-client.connect_signal(
-    "focus",
-    function(c)
-        if #awful.screen.focused().clients > 1 then
-            c.border_color = beautiful.border_focus
-        end
-    end
-)
-client.connect_signal(
-    "unfocus",
-    function(c)
-        c.border_color = beautiful.border_normal
-    end
-)
-
 -- Garbage Collection
 collectgarbage("setpause", 160)
 collectgarbage("setstepmul", 400)
