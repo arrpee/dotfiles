@@ -39,6 +39,20 @@ local getTitlebar = function(args)
     local right = {
         layout = wibox.layout.fixed.horizontal,
         {
+            widget = wibox.container.place,
+            {
+                widget = wibox.container.margin,
+                top = 7,
+                bottom = 7,
+                left = 0,
+                right = 10,
+                {
+                    layout = wibox.layout.fixed.horizontal,
+                    awful.titlebar.widget.floatingbutton(c)
+                }
+            }
+        },
+        {
             widget = wibox.container.margin,
             top = 7,
             bottom = 7,
