@@ -42,7 +42,17 @@ HYPHEN_INSENSITIVE="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Hide commands starting with spaces from zsh history
-setopt HIST_IGNORE_SPACE
+setopt hist_ignore_space
+
+# Share history between multiple shells
+setopt share_history
+
+# Ignore duplicates in history
+setopt hist_ignore_dups
+setopt hist_ignore_all_dups
+
+# Remove superfluous blanks from history.
+setopt hist_reduce_blanks
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
