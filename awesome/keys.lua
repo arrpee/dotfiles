@@ -78,18 +78,18 @@ keys.tasklist_buttons =
         {},
         2,
         function(c)
-            clients = c.screen.get_clients()
-            for _, client in pairs(clients) do
-                client.minimized = true
-            end
-            c:jump_to(false)
+            c:kill()
         end
     ),
     awful.button(
         {},
         3,
         function(c)
-            c:kill()
+            clients = c.screen.get_clients()
+            for _, client in pairs(clients) do
+                client.minimized = true
+            end
+            c:jump_to(false)
         end
     )
 )
