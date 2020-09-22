@@ -1,5 +1,5 @@
 # Scripts
-alias awr="awesome-client 'awesome.restart()'"
+alias awr="awesome-client 'awesome.restart()' 2>/dev/null"
 alias awt="Xephyr :5 & sleep 1 ; DISPLAY=:5 awesome"
 
 # Shortcuts
