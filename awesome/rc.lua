@@ -13,6 +13,7 @@ local keys = require("keys")
 
 -- Use tags and components
 require("components.notifications")
+require("components.titlebar")
 require("components.top_panel")
 require("components.wallpaper")
 require("tags")
@@ -28,8 +29,12 @@ client.connect_signal(
         end
 
         -- Rounded Corners
-        c.shape = function(cr, w, h)
-            gears.shape.rounded_rect(cr, w, h, 8)
+        if c.fullscreen == true then
+            c.shape = gears.shape.rectangle
+        else
+            c.shape = function(cr, w, h)
+                gears.shape.rounded_rect(cr, w, h, 8)
+            end
         end
 
         -- Prevent clients from being unreachable after screen count changes.

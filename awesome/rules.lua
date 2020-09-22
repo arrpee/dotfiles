@@ -21,6 +21,10 @@ rules = {
             placement = awful.placement.centered
         }
     },
+    {
+        rule_any = {type = {"normal", "dialog"}},
+        properties = {titlebars_enabled = true}
+    },
     -- Floating clients.
     {
         rule_any = {

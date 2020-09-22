@@ -12,9 +12,9 @@ local tasklist = function(s)
         awful.widget.tasklist.filter.currenttags,
         keys.tasklist_buttons,
         {
-            spacing = 4,
+            spacing = 5,
             align = "left",
-            shape = gears.shape.rectangle,
+            shape = gears.shape.rounded_rect,
             layout = wibox.layout.align.horizontal
         }
     )
