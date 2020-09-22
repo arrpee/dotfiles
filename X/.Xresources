@@ -41,6 +41,7 @@ accent2: #6676BB
 
 URxvt.cursorColor: #66AABB
 
+URxvt.iconFile:    /usr/share/icons/Papirus/32x32/apps/terminal.svg
 URxvt.internalBorder: 18
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
