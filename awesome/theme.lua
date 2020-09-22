@@ -25,9 +25,9 @@ theme.bg_normal = xrdb.background
 theme.border_normal = theme.bg_normal
 theme.taglist_shape_border_color = theme.bg_normal
 theme.tasklist_shape_border_color = theme.bg_normal
-theme.notification_bg = theme.bg_normal
-theme.bg_focus = xrdb.color0
+theme.bg_focus = xrdb.color8
 theme.taglist_bg_focus = theme.bg_focus
+theme.notification_bg = theme.bg_focus
 
 theme.taglist_bg_urgent = xrdb.color1
 
@@ -35,9 +35,6 @@ theme.tasklist_disable_icon = true
 theme.border_width = dpi(1)
 theme.taglist_shape_border_width = dpi(1)
 theme.tasklist_shape_border_width = dpi(1)
-theme.notification_max_width = dpi(500)
-theme.notification_max_height = dpi(300)
-theme.notification_border_width = theme.border_width
 
 theme.useless_gap = dpi(8)
 theme.notification_margin = theme.useless_gap

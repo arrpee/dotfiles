@@ -1,27 +1,26 @@
--- Imports
 local naughty = require("naughty")
 local beautiful = require("beautiful")
 local gears = require("gears")
-local wibox = require("wibox")
-local awful = require("awful")
 local dpi = require("beautiful").xresources.apply_dpi
+
+-- Naughty shape and look
+naughty.config.padding = dpi(14)
+naughty.config.spacing = dpi(5)
+naughty.config.defaults.icon_size = dpi(40)
+naughty.config.defaults.margin = dpi(8)
+naughty.config.defaults.max_width = dpi(500)
+naughty.config.defaults.max_height = dpi(300)
+naughty.config.defaults.border_width = 2
+naughty.config.defaults.shape = gears.shape.rounded_rect
 
 -- Config for Naughty
 naughty.config.defaults.ontop = true
-naughty.config.defaults.icon_size = dpi(40)
-naughty.config.defaults.screen = awful.screen.focused()
-naughty.config.defaults.timeout = 6
-naughty.config.defaults.shape = function(cr, w, h)
-    gears.shape.rounded_rect(cr, w, h, dpi(6))
-end
-naughty.config.padding = dpi(14)
-naughty.config.spacing = dpi(5)
 naughty.config.defaults.position = "top_right"
-naughty.config.presets.critical = {
-    border_color = beautiful.notification_border_width_critical
-}
+naughty.config.defaults.icon = nil
+naughty.config.defaults.timeout = 6
+naughty.config.defaults.hover_timeout = nil
 
--- Error Handling (Startup and Normal)
+-- Error handling
 if awesome.startup_errors then
     naughty.notify(
         {
