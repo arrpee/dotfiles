@@ -20,7 +20,7 @@ local getTitlebar = function(args)
                 right = 0,
                 {
                     layout = wibox.layout.fixed.horizontal,
-                    awful.titlebar.widget.iconwidget(c)
+                    awful.titlebar.widget.floatingbutton(c)
                 }
             }
         },
@@ -48,19 +48,8 @@ local getTitlebar = function(args)
                 right = 10,
                 {
                     layout = wibox.layout.fixed.horizontal,
-                    awful.titlebar.widget.floatingbutton(c)
+                    awful.titlebar.widget.minimizebutton(c)
                 }
-            }
-        },
-        {
-            widget = wibox.container.margin,
-            top = 7,
-            bottom = 7,
-            left = 0,
-            right = 10,
-            {
-                layout = wibox.layout.fixed.horizontal,
-                awful.titlebar.widget.minimizebutton(c)
             }
         },
         {
