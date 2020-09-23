@@ -50,7 +50,7 @@
   "workbench.settings.openDefaultSettings": true,
   "workbench.statusBar.visible": true,
   "workbench.tips.enabled": false,
-  "window.menuBarVisibility": "toggle",
+  "window.menuBarVisibility": "hidden",
   "vim.startInInsertMode": true,
   "vim.useSystemClipboard": true,
   "terminal.integrated.cursorBlinking": true,
