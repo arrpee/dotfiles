@@ -26,6 +26,7 @@ local boundary_sep =
 
 local sep =
     wibox.widget {
+    opacity = 0,
     color = beautiful.bg_normal,
     shape = gears.rounded_bar,
     widget = wibox.widget.separator,
@@ -42,7 +43,7 @@ local TopPanel = function(s)
         height = dpi(30),
         width = s.geometry.width,
         stretch = false,
-        bg = beautiful.bg_normal,
+        bg = beautiful.bg_normal .. "AA",
         fg = beautiful.fg_normal
     }
 

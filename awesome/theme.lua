@@ -7,7 +7,7 @@ local theme = {}
 
 theme.icon_path = awful.util.getdir("config") .. "/icons/"
 
-theme.base_font = "RobotoMono Nerd Font "
+theme.base_font = "RobotoMono Nerd Font Medium "
 theme.font = theme.base_font .. "10"
 theme.taglist_font = theme.base_font .. "10"
 theme.notification_font = theme.base_font .. "12"

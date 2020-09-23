@@ -14,7 +14,9 @@ local tasklist = function(s)
         {
             spacing = 5,
             align = "left",
-            shape = gears.shape.rounded_rect,
+            shape = function(cr, width, height, radius)
+                return gears.shape.transform(gears.shape.rectangle):translate(-3, 0)(cr, width, height, radius)
+            end,
             layout = wibox.layout.align.horizontal
         }
     )

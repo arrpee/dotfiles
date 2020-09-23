@@ -15,7 +15,7 @@ local taglist = function(s)
         keys.taglist_buttons,
         {
             spacing = 0,
-            shape = gears.shape.rounded_rect,
+            shape = gears.shape.rectangle,
             layout = wibox.layout.align.horizontal
         }
     )
