@@ -20,31 +20,27 @@ theme.titlebar_fg = theme.fg_normal
 theme.fg_focus = xrdb.color4
 theme.border_focus = theme.fg_focus
 theme.taglist_fg_focus = theme.fg_focus
-theme.taglist_shape_border_color_focus = theme.fg_focus
-theme.tasklist_shape_border_color_focus = theme.fg_focus
 theme.titlebar_fg_focus = theme.fg_focus
 
 theme.bg_normal = xrdb.background
 theme.border_normal = theme.bg_normal
-theme.taglist_shape_border_color = theme.bg_normal
-theme.tasklist_shape_border_color = theme.bg_normal
 theme.titlebar_bg = theme.bg_normal
 theme.notification_bg = theme.bg_normal
 
 theme.bg_focus = xrdb.color8
-theme.tasklist_bg_focus = theme.bg_focus
-theme.taglist_bg_focus = theme.bg_focus
+theme.tasklist_bg_focus = theme.bg_focus .. "77"
+theme.taglist_bg_focus = theme.bg_focus .. "77"
 
 theme.taglist_bg_urgent = xrdb.color1
 
 theme.tasklist_disable_icon = false
 theme.tasklist_disable_task_name = true
-theme.tasklist_plain_task_name = true
 
 theme.border_width = dpi(2)
 theme.useless_gap = dpi(8)
 theme.notification_margin = theme.useless_gap
 theme.titlebar_size = dpi(16)
+theme.systray_icon_spacing = dpi(4)
 
 -- regular
 theme.titlebar_close_button_normal = theme.icon_path .. "titlebar/close/close_1.svg"

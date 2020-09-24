@@ -1,28 +1,15 @@
 -- Imports
 local wibox = require("wibox")
-local toggle_widget = require("utils.toggle_widget")
+local dpi = require("beautiful").xresources.apply_dpi
+local icons = require("utils.icons")
+local toggle_icon_widget = require("utils.toggle_icon_widget")
 
 -- Systray Widget
 local systray = wibox.widget.systray(true)
-systray.visible = false
-systray.set_base_size(28)
+systray.set_base_size(22)
 systray.set_horizontal(true)
-local systray_widget =
-    create_toggle_widget(
-    false,
-    "  ",
-    "  ",
-    function()
-        systray.visible = true
-    end,
-    function()
-        systray.visible = false
-    end,
-    wibox.widget.textbox
-)
+systray.visible = true
 
-return {
-    systray,
-    systray_widget,
-    layout = wibox.layout.align.horizontal
-}
+local systray_widget = create_toggle_icon_widget(false, icons.systray, systray, false)
+
+return systray_widget

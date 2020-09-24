@@ -2,13 +2,15 @@
 local awful = require("awful")
 local wibox = require("wibox")
 local beautiful = require("beautiful")
+local dpi = require("beautiful").xresources.apply_dpi
 local gears = require("gears")
 local keys = require("keys")
 
 -- Tasklist widget
-local tasklist = function(s)
-    return awful.widget.tasklist(
-        1,
+local create_tasklist = function(s)
+    local tasklist =
+        awful.widget.tasklist(
+        s,
         awful.widget.tasklist.filter.currenttags,
         keys.tasklist_buttons,
         {
@@ -20,6 +22,15 @@ local tasklist = function(s)
             layout = wibox.layout.align.horizontal
         }
     )
+
+    return {
+        tasklist,
+        left = dpi(6),
+        right = dpi(6),
+        bottom = dpi(1),
+        top = dpi(1),
+        widget = wibox.container.margin
+    }
 end
 
-return tasklist
+return create_tasklist
