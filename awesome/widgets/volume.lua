@@ -43,6 +43,6 @@ if volume.display_notification then
     )
 end
 
-local volume_widget = create_toggle_icon_widget(true, icons.volume, volume.widget, false)
+local volume_widget = create_toggle_icon_widget(true, icons.volume, volume.widget, true)
 
 return volume_widget

@@ -14,6 +14,6 @@ local cpu =
     end
 }
 
-local cpu_widget = create_toggle_icon_widget(true, icons.cpu, cpu.widget, false)
+local cpu_widget = create_toggle_icon_widget(true, icons.cpu, cpu.widget, true)
 
 return cpu_widget

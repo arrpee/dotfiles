@@ -9,6 +9,6 @@ local toggle_icon_widget = require("utils.toggle_icon_widget")
 -- Clock Widget
 local textclock = wibox.widget.textclock(lain.util.markup(beautiful.fg_normal, " %Y/%m/%d %a "), 60)
 
-local clock_widget = create_toggle_icon_widget(true, icons.calendar, textclock, false)
+local clock_widget = create_toggle_icon_widget(true, icons.calendar, textclock, true)
 
 return clock_widget

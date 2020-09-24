@@ -13,6 +13,6 @@ local ram =
     end
 }
 
-local ram_widget = create_toggle_icon_widget(true, icons.memory, ram.widget, false)
+local ram_widget = create_toggle_icon_widget(true, icons.memory, ram.widget, true)
 
 return ram_widget
