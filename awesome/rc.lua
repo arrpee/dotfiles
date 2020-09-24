@@ -7,15 +7,18 @@ require("awful.autofocus")
 -- Start with awesomewm
 beautiful.init(awful.util.getdir("config") .. "/theme.lua")
 
+-- Use components
+require("components.notifications")
+require("components.quake")
+require("components.titlebar")
+require("components.top_panel")
+require("components.wallpaper")
+
 -- Use rules and keys
 awful.rules.rules = require("rules")
 local keys = require("keys")
 
--- Use tags and components
-require("components.notifications")
-require("components.titlebar")
-require("components.top_panel")
-require("components.wallpaper")
+-- Define Tags
 require("tags")
 
 -- Main window manage function

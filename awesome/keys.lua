@@ -106,6 +106,14 @@ keys.globalkeys =
         end,
         {description = "open a terminal", group = "launcher"}
     ),
+    awful.key(
+        {modkey2},
+        "Return",
+        function()
+            awful.screen.focused().quake:toggle()
+        end,
+        {description = "open a terminal", group = "launcher"}
+    ),
     -- Launch rofi
     awful.key(
         {modkey},
