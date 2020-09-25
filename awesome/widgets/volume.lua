@@ -12,7 +12,7 @@ local volume =
     settings = function()
         vol = math.floor(((tonumber(volume_now.left) or 100) + (tonumber(volume_now.right) or 100)) / 2)
         if volume_now.muted == "yes" then
-            vlevel = "  "
+            vlevel = "   "
         else
             vlevel = " " .. vol .. "% "
         end
