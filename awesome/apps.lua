@@ -8,7 +8,7 @@ local apps = {
     browser = "google-chrome-stable",
     editor = "code",
     music_player = "spotify",
-    lock = "sh -c ~/.dotfiles/scripts/,lock",
+    lock = "xautolock -locknow",
     power = "sh -c ~/.dotfiles/scripts/,powermenu",
     launcher = "rofi -theme arrpee -show-icons -modi drun,run -show drun",
     switcher = "rofi -theme arrpee -show-icons -modi window -show window",
@@ -18,8 +18,13 @@ local apps = {
 -- List of apps to start once on start-up
 local run_on_start_up = {
     "pulseaudio",
-    "picom --experimental-backends",
-    "nm-applet"
+    "nm-applet",
+    'xautolock \\\
+    -time 60 \\\
+    -locker "~/.dotfiles/scripts/,lock" \\\
+    -notify 60 \\\
+    -notifier "notify-send -u critical -- \'Screen will lock in 60 seconds\'"',
+    "picom --experimental-backends"
 }
 
 -- Run all the apps listed in run_on_start_up when awesome starts

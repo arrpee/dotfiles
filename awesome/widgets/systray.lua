@@ -1,6 +1,5 @@
 -- Imports
 local wibox = require("wibox")
-local dpi = require("beautiful").xresources.apply_dpi
 local icons = require("utils.icons")
 local toggle_icon_widget = require("utils.toggle_icon_widget")
 

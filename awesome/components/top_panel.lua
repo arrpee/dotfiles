@@ -14,6 +14,7 @@ local ram = require("widgets.ram")
 local volume = require("widgets.volume")
 local time = require("widgets.time")
 local date = require("widgets.date")
+local autolock = require("widgets.autolock")
 local systray = require("widgets.systray")
 
 -- Separator Widgets
@@ -64,6 +65,7 @@ local TopPanel = function(s)
             volume,
             date,
             time,
+            autolock,
             systray,
             boundary_sep
         }

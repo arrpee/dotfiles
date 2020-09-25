@@ -3,6 +3,7 @@ local awful = require("awful")
 local icon_path = awful.util.getdir("config") .. "/icons/"
 
 return {
+    lock = icon_path .. "/widgets/lock.svg",
     spotify = icon_path .. "/widgets/spotify.svg",
     memory = icon_path .. "/widgets/memory.svg",
     cpu = icon_path .. "/widgets/cpu.svg",

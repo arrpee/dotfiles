@@ -19,6 +19,10 @@ local create_tasklist = function(s)
             shape = function(cr, width, height, radius)
                 return gears.shape.transform(gears.shape.rectangle):translate(-3, 0)(cr, width, height, radius)
             end,
+            disable_icon = false,
+            disable_task_name = true,
+            fg_focus = beautiful.fg_focus,
+            bg_focus = beautiful.bg_focus .. "77",
             layout = wibox.layout.align.horizontal
         }
     )

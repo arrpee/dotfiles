@@ -2,12 +2,17 @@
 local wibox = require("wibox")
 local awful = require("awful")
 local gears = require("gears")
-
 local beautiful = require("beautiful")
 local dpi = beautiful.xresources.apply_dpi
 -- Toggle Widget
-function create_toggle_icon_widget(on_by_default, icon, widget, right, colour)
+function create_toggle_icon_widget(on_by_default, icon, widget, right, colour, open_action, close_action)
     colour = colour or beautiful.fg_normal
+
+    open_action = open_action or function()
+        end
+
+    close_action = close_action or function()
+        end
 
     if not on_by_default then
         widget.visible = false
@@ -62,11 +67,17 @@ function create_toggle_icon_widget(on_by_default, icon, widget, right, colour)
         function(_, _, _, button)
             if (button == 1) then
                 toggle_widget:toggle_visible()
+                if toggle_widget.text.visible then
+                    open_action()
+                else
+                    close_action()
+                end
             end
         end
     )
 
-    full_widget = {
+    full_widget =
+        wibox.widget {
         {
             toggle_widget,
             shape = gears.shape.rectangle,

@@ -22,7 +22,7 @@ rules = {
         }
     },
     {
-        rule_any = {type = {"normal", "dialog"}},
+        rule_any = {type = {"normal"}},
         properties = {titlebars_enabled = true}
     },
     -- Floating clients.
