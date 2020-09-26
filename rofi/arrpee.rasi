@@ -1,89 +1,100 @@
 configuration {
+  display-drun: "Apps";
+  drun-display-format: "{icon} {name}";
+  hide-scrollbar: true;
+  display-run: "Commands";
+  display-window: "Windows";
+
+  show-icons: true;
+  fullscreen: false;
+  sidebar-mode: false;
 }
 
-* {
-    foreground: #EBEBEB;
-    foreground-alt: #66AABB;
+@import "colors.rasi" * {
+  inputbar-margin: 3px 3px;
+  prompt-padding: 10px 10px;
+  entry-padding: 10px 0px 10px 0px;
+}
 
-    background: #111317;
-    background-alt: #1F1F1F;
-
-    /* Some blocks were not picking up the background properly */
-    background-color: #111317;
-
-    highlight: #E95678;
-
-    border-color: #66AABB;
-
-    font: "FiraCode Nerd Font 12";
+mainbox {
+  children: [mode-switcher, inputbar, listview];
 }
 
 #window {
-    width: 800px;
-    padding: 10px;
-    border:  2px;
-    border-radius: 0;
-    color: @foreground;
-    background-color: @background;
-    border-color: @border-color;
-    spacing: 0;
-    children:  [vertb, mainbox];
-    orientation: horizontal;
+  width: 40%;
+  height: 40%;
+  border: 2px;
+  border-color: @foreground-alt;
 }
 
-#mainbox {
-    spacing: 0;
-    children: [ inputbar, message, listview ];
+* {
+  background-color: @background;
+  text-color: @foreground;
+  font: @font;
 }
 
-#message {
-	border: none;
-    padding: 5;
-    background-color: @background;
+mode-switcher {
+  expand: false;
+  border: 0px 0px 2px 0px;
+  border-color: @foreground-alt;
+}
+
+button {
+  padding: 5 10;
+}
+
+button selected {
+  background-color: @foreground-alt;
+  text-color: @background;
+}
+
+inputbar,
+prompt,
+textbox-prompt-colon,
+entry {
+  background-color: @background-alt;
+  border: 1px;
+  border-color: @foreground-alt;
 }
 
 #inputbar {
-    padding: 20px 20px 0 20px;
-    border-color: @background-alt;
-	color: @foreground-alt;
-    foreground: @background;
-    background-color: @background;
-}
-
-#entry,prompt,case-indicator {
-    text-font: inherit;
-    text-color:inherit;
+  children: [ prompt, textbox-prompt-colon, entry ];
+  margin: 30px 30px 0px 30px;
 }
 
 #prompt {
-    enabled: false;
+  padding: @prompt-padding;
+  background-color: @foreground-alt;
+  text-color: @background;
+}
+
+#textbox-prompt-colon {
+  border: 0px;
+  expand: false;
+  str: "   ";
+  padding: 10px -5px 0px 0px;
 }
 
 #listview {
-    padding: 20px;
-    border: none;
-    dynamic: false;
-    lines: 8;
-    background-color: @background;
+  margin: 10px 30px 20px 30px;
+}
+
+#entry {
+  border: 0px;
+  text-color: @foreground-alt;
+  padding: @entry-padding;
 }
 
 #element {
-    padding: 5px;
-    vertical-align: 0.5;
-    background-color: @background;
-    color: @foreground;
+  padding: 8px;
+  margin: 1px;
+  border: 0px 4px 0px 4px;
+  background-color: @background;
+  border-color: @background;
 }
 
-#element selected  {
-    background-color: @background-alt;
-    color: @foreground-alt;
-}
-
-#vertb {
-    expand: false;
-    children: [ dummy0, sidebar, dummy1  ];
-}
-
-#sidebar {
-    expand: false;
+#element.selected {
+  background-color: @background-alt;
+  text-color: @foreground-alt;
+  border-color: @foreground-alt;
 }

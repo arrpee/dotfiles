@@ -1,0 +1,13 @@
+* {
+    foreground: #EBEBEB;
+    foreground-alt: #66AABB;
+
+    background: #111317;
+    background-alt: #1F1F1F;
+
+    accent: #CC6666;
+
+    border-color: #66AABB;
+
+    font: "RobotoMono Nerd Font Medium 12";
+  }

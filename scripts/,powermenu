@@ -1,18 +1,22 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-rofi_command="rofi -theme arrpee"
+# OG Author : Aditya Shakya (adi1090x)
+rofi_command="rofi -theme power.rasi"
+
+uptime=$(uptime -p | sed -e 's/up //g')
 
 # Options
-lock="  Lock"
-logout="  Logout"
-suspend="  Suspend"
-reboot="  Reboot"
-shutdown="  Shutdown"
+shutdown=""
+reboot=""
+lock=""
+suspend=""
+logout=""
+dir="$HOME/.config/rofi/power"
 
 # Variable passed to rofi
-options="$lock\n$logout\n$suspend\n$shutdown\n$reboot"
+options="$logout\n$suspend\n$lock\n$shutdown\n$reboot"
 
-chosen="$(echo -e "$options" | $rofi_command -dmenu -i)"
+chosen="$(echo -e "$options" | $rofi_command -p "  $uptime  " -dmenu -selected-row 2)"
 case $chosen in
 $lock)
     xautolock -locknow
