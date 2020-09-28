@@ -6,6 +6,7 @@ local hotkeys_popup = require("awful.hotkeys_popup").widget
 
 -- Use applications
 local apps = require("apps")
+local wallpaper = require("components.wallpaper")
 
 -- Define mod keys
 local modkey = "Mod1"
@@ -223,6 +224,14 @@ keys.globalkeys =
         "Print",
         function()
             awful.util.spawn(apps.screenshot, false)
+        end
+    ),
+    -- Change wallpaper
+    awful.key(
+        {modkey2},
+        "w",
+        function()
+            wallpaper()
         end
     ),
     -- Focus client by direction (arrow keys)
