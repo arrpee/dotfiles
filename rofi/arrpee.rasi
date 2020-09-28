@@ -10,19 +10,21 @@ configuration {
   sidebar-mode: false;
 }
 
-@import "colors.rasi" * {
+@import "colors.rasi"
+
+* {
   inputbar-margin: 3px 3px;
   prompt-padding: 10px 10px;
   entry-padding: 10px 0px 10px 0px;
 }
 
 mainbox {
-  children: [mode-switcher, inputbar, listview];
+  children: [inputbar, listview];
 }
 
 #window {
   width: 40%;
-  height: 40%;
+  height: 30%;
   border: 2px;
   border-color: @foreground-alt;
 }
@@ -31,21 +33,6 @@ mainbox {
   background-color: @background;
   text-color: @foreground;
   font: @font;
-}
-
-mode-switcher {
-  expand: false;
-  border: 0px 0px 2px 0px;
-  border-color: @foreground-alt;
-}
-
-button {
-  padding: 5 10;
-}
-
-button selected {
-  background-color: @foreground-alt;
-  text-color: @background;
 }
 
 inputbar,
@@ -91,6 +78,10 @@ entry {
   border: 0px 4px 0px 4px;
   background-color: @background;
   border-color: @background;
+}
+
+#element-icon {
+  size: 20px;
 }
 
 #element.selected {
