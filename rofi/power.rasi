@@ -20,6 +20,7 @@ window {
     background-color:               @background;
     text-color:                     @foreground;
     border:                         1px;
+    border-color:                   @background-alt;
     height:                         25%;
     width:                          35%;
     location:                       center;
