@@ -60,7 +60,7 @@ setopt hist_reduce_blanks
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=~/.dotfiles/zsh
+ZSH_CUSTOM=~/dotfiles/zsh
 
 plugins=(
     fzf
