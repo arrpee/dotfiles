@@ -97,6 +97,10 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+space exec --no-startup-id "rofi -theme arrpee -show-icons -modi drun,run -show drun"
 bindsym $mod+Tab exec --no-startup-id "rofi -theme arrpee -show-icons -modi window -show window"
 
+# Start apps
+bindsym $mod+F1 exec google-chrome-stable
+bindsym $mod+F2 exec code
+
 ##=====================================
 # Visuals
 ##=====================================
