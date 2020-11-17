@@ -74,3 +74,5 @@ plugins=(
 bindkey '^ ' autosuggest-accept
 
 source $ZSH/oh-my-zsh.sh
+
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
