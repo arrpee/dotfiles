@@ -61,5 +61,8 @@
   "python.showStartPage": false,
   "workbench.startupEditor": "newUntitledFile",
   "vim.useCtrlKeys": false,
-  "vim.disableExtension": true
+  "vim.disableExtension": true,
+  "git.detectSubmodules": false,
+  "git.enableSmartCommit": true,
+  "gitlens.showWhatsNewAfterUpgrades": false
 }
