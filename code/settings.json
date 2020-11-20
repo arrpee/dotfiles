@@ -50,7 +50,6 @@
   "workbench.settings.openDefaultSettings": true,
   "workbench.statusBar.visible": true,
   "workbench.tips.enabled": false,
-  "window.menuBarVisibility": "hidden",
   "vim.startInInsertMode": true,
   "vim.useSystemClipboard": true,
   "terminal.integrated.cursorBlinking": true,
@@ -64,5 +63,13 @@
   "vim.disableExtension": true,
   "git.detectSubmodules": false,
   "git.enableSmartCommit": true,
-  "gitlens.showWhatsNewAfterUpgrades": false
+  "gitlens.showWhatsNewAfterUpgrades": false,
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "toggle",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
