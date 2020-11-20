@@ -116,13 +116,9 @@ module-margin = 1
 ; See the Fonts wiki page for more details
 font-0 = RobotoMono Nerd Font:size=10
 
-; Modules are added to one of the available blocks
-;   modules-left = cpu ram
-;   modules-center = xwindow xbacklight
-;   modules-right = ipc clock
 modules-left = i3 window
 modules-center =
-modules-right = keyboard weather aqi cpu memory audio date
+modules-right = keyboard weather aqi cpu memory wifi audio date
 
 ; The separator will be inserted between the output of each module
 separator = %{F#E95678}|%{F-}
@@ -525,6 +521,43 @@ format = <label>
 
 label =  %percentage_used%%
 
+[module/wifi]
+type = internal/network
+interface = wlxd46e0e068023
+
+; Available tags:
+;   <label-connected> (default)
+;   <ramp-signal>
+format-connected = <label-connected>
+
+; Available tags:
+;   <label-disconnected> (default)
+format-disconnected = <label-disconnected>
+
+; Available tags:
+;   <label-connected> (default)
+;   <label-packetloss>
+;   <animation-packetloss>
+format-packetloss = <label-packetloss>
+
+; All labels support the following tokens:
+;   %ifname%    [wireless+wired]
+;   %local_ip%  [wireless+wired]
+;   %local_ip6% [wireless+wired]
+;   %essid%     [wireless]
+;   %signal%    [wireless]
+;   %upspeed%   [wireless+wired]
+;   %downspeed% [wireless+wired]
+;   %linkspeed% [wired]
+
+label-connected = 直 %essid%
+label-connected-foreground = #eefafafa
+
+; Default: (none)
+label-disconnected = 睊
+
+; Default: (none)
+;label-packetloss = 睊 %essid%
 
 [module/date]
 type = internal/date
